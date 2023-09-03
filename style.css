@@ -1,0 +1,251 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #60a9ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel-container{
+  background-color: #fff;
+  padding: 15px 25px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 960px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.price-table{
+  border-bottom:1px #e1f1ff solid;
+
+}
+
+.price-table:last-child{
+  border-bottom:none;
+}
+
+.price-table img{
+  width: 100%;
+  padding-bottom: 15px;
+}
+
+.pricing-header{
+  font-weight: 500;
+  color: #888E97;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+
+.price-feature{
+  color: #016ff9;
+  margin:50px 0 25px;
+}
+
+.feature-list{
+  border-top: 1px #e1f1ff solid;
+  font-weight: 500;
+  font-size: 13px;
+  padding: 15px 0;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+.feature-list:last-child{
+  border-bottom: 1px #e1f1ff solid; ;
+}
+
+.label-price{
+  font-weight: 600;
+  color: #016ff9;
+  font-size: 32px;
+  display: block;
+  padding-bottom: 10px;
+}
+
+.btn{
+  border: 1px #48aaff solid;
+  padding: 15px 35px;
+  border-radius: 10px;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 25px 0;
+  color: #348efe;
+  transition: 0.2s ease-in-out;
+}
+
+.btn:hover{
+  background-color: #e1f1ff;
+}
+
+
+.btn2{
+  border: 1px #48aaff solid;
+  background-color: #60a9ff;
+  padding: 15px 35px;
+  border-radius: 10px;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 25px 0;
+  color: #fff;
+  transition: 0.2s ease-in-out;
+}
+
+.btn2:hover{
+  background-color: #348efe;
+}
+
+@media (min-width: 900px) {
+
+  .panel-container{
+    flex-direction: row;
+    margin-top:180px;
+  
+  }
+
+  .price-table{
+    border-bottom: none;
+    border-right: 1px solid #e1f1ff;
+    padding: 25px 50px;
+   
+  }
+  .price-table:last-child{
+    border-right:none;
+  }
+}
